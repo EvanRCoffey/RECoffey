@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evan's website - Bio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--External CSS file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="subpage">
+
+<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<a href="bio.html" style="color: khaki">Bio</a>
+				<a href="blogCurrentEntry.html">Blog</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="tunes.html">Tunes</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		</div>
+	</header>
+
+<!-- Three -->
+	<section id="three" class="wrapper">
+		<div class="inner">
+			<!--Main page content-->
+			<div id="mainSection">
+				<br><br>
+				<div style="text-align: center;"><img src="https://raw.githubusercontent.com/REvanCof/RECoffeyDotCom/master/public_html/assets/img/bio1.jpg" height="300px" width="auto"></div>
+				<br><br>
+				Hello!  My name is Roger Coffey, but I use my middle name, Evan.  I live in Georgetown, TX with my wife, Lesley, and my two cats, Remy and Leeloo.  I work at a data center that services several branches of a well-known local bank, where I operate postage machinery and assist with data entry and system operations.  I have education in both music and programming, and I am always working on a creative project for one or the other.  I also enjoy film, gaming, nature, and spending time with my wife and cats.
+				<br><br>
+				I am open to new opportunities!  Feel free to browse my <a href="portfolio.html" class="normalLink">web development portfolio</a>, check out some <a href="portfolio.html" class="normalLink">tunes I've arranged</a>, read my <a href="blogCurrentEntry.html" class="normalLink">blog</a>, or <a href="contact.html" class="normalLink">get in touch</a>.
+			</div>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="flex">
+				<!--Footer, with random complement-->
+				<div id="footerIndex">
+					<div id="footerFloatRight"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+<!--Code for delayed fading in of page material-->
+	<script type="text/javascript">
+		//Feel free to add more complements
+		var complementBank = ["I like your shoes","I love your outfit","Your hair looks great today","You smell wonderful","You are an inspiration","You look like a winner","You're just the best","You're so clever","Seriously, you're awesome","You are truly an impressive person","Keep up the good work, champ","You should be proud of yourself","Tone it down some, you're making everyone else look bad","Nice butt"];
+		//Returns a random complement from complementBank[]
+		function randomComplement() {
+			var randomNum = Math.floor(Math.random() * complementBank.length);
+			return complementBank[randomNum];
+		}
+		$( document ).ready(function() {
+			var complement = randomComplement();
+			$( "#footerFloatRight" ).html(complement);
+		});	
+	</script>
+
+
+	</body>
+</html>

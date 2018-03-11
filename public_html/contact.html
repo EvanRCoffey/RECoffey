@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Evan's website - Contact</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--External CSS file-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="subpage">
+	
+<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<a href="bio.html">Bio</a>
+				<a href="blogCurrentEntry.html">Blog</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="tunes.html">Tunes</a>
+				<a href="contact.html" style="color: khaki">Contact</a>
+			</nav>
+			<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		</div>
+	</header>
+
+<!-- Three -->
+	<section id="three" class="wrapper">
+		<div class="inner">
+			<!--Main page content-->
+			<div id="mainSection">
+				<div style="text-align: center;">
+				<br><br>
+				<img src="https://raw.githubusercontent.com/REvanCof/RECoffeyDotCom/master/public_html/assets/img/contact1.jpg" height="300px" width="auto">
+				<br><br>
+				<a class="connectIcons" href="https://www.linkedin.com/in/evan-coffey-6288227b" target="_blank"><img src="https://raw.githubusercontent.com/REvanCof/RECoffeyDotCom/master/public_html/assets/img/socialMediaIcons/linkedin.png" align="middle" height="75px" width="auto" alt="LinkedIn"></a>
+				<a class="connectIcons" href="https://twitter.com/REvanCof" target="_blank"><img src="https://raw.githubusercontent.com/REvanCof/RECoffeyDotCom/master/public_html/assets/img/socialMediaIcons/twitter.png" align="middle" height="75px" width="auto" alt="Twitter"></a>
+				<a class="connectIcons" href="https://www.facebook.com/evan.coffey.5" target="_blank"><img src="https://raw.githubusercontent.com/REvanCof/RECoffeyDotCom/master/public_html/assets/img/socialMediaIcons/facebook.png" align="middle" height="75px" width="auto" alt="Facebook"></a>
+				<br>Email - RogerECoffey@gmail.com<br>
+				Cell - 228-326-7112 (text or call)<br><br>
+				This lovely mobile-responsive layout is open-source!  I found it at https://templated.co/
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="flex">
+				<!--Footer, with random complement-->
+				<div id="footerIndex">
+					<div id="footerFloatRight"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+<!--Code for delayed fading in of page material-->
+	<script type="text/javascript">
+		//Feel free to add more complements
+		var complementBank = ["I like your shoes","I love your outfit","Your hair looks great today","You smell wonderful","You are an inspiration","You look like a winner","You're just the best","You're so clever","Seriously, you're awesome","You are truly an impressive person","Keep up the good work, champ","You should be proud of yourself","Tone it down some, you're making everyone else look bad","Nice butt"];
+		//Returns a random complement from complementBank[]
+		function randomComplement() {
+			var randomNum = Math.floor(Math.random() * complementBank.length);
+			return complementBank[randomNum];
+		}
+		$( document ).ready(function() {
+			var complement = randomComplement();
+			$( "#footerFloatRight" ).html(complement);
+		});	
+	</script>
+
+</body>
+</html>
